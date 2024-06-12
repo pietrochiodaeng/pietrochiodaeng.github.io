@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+header .logo h1 span {
+    color: #e74c3c;
+}
+
+header nav {
+    margin-left: auto;
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    position: relative;
+}
+
+header nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #e74c3c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .intro #profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.hero .intro p {
+    font-size: 24px;
+    color: #e74c3c;
+}
+
+.hero .intro h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero .intro span {
+    color: #e74c3c;
+}
+
+.hero .intro .description {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #e74c3c;
+}
+
+/* Background shapes */
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+}
+
+body::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 75%, #e74c3c 75%);
+    transform: skewY(-10deg);
+}
+
+body::after {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, transparent 75%, #e74c3c 75%);
+    transform: skewY(10deg);
+}

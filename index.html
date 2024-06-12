@@ -2,88 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            padding: 15px 20px;
-            text-decoration: none;
-            display: inline-block;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        header {
-            background-color: #4c7aaf;
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
-        }
-        header .profile-info {
-            text-align: center;
-        }
-        header h1 {
-            margin: 10px 0;
-        }
-        header p {
-            margin: 5px 0;
-        }
-        section {
-            padding: 20px;
-            background-color: white;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d4595a3cbf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img src="CV_img.png" alt="Profile Picture">
-        <h1>Pietro Chioda</h1>
-        <p>Welcome to My Portfolio</p>
-        <p>Explore my projects, learn about my background, and get in touch.</p>
+        <div class="logo">
+            <h1>Pietro<span>Chioda</span></h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-    </nav>
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm Pietro Chioda, a passionate engineer specialized in mechanical engineering and robotics. I love creating innovative solutions to challenging problems and sharing my work with others. Take a look around to learn more about me and my projects.</p>
+    <section class="hero">
+        <div class="intro">
+            <img src="CV_img.png" alt="Profile Picture" id="profile-pic">
+            <p>Hi, my name is</p>
+            <h1>Pietro <span>Chioda</span></h1>
+            <p class="description">a passionate engineer specialized in mechanical engineering and robotics. I love creating innovative solutions to challenging problems and sharing my work with others. Take a look around to learn more about me and my projects.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/pietro-chioda-a0b8a51a2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
     </section>
     <footer>
         &copy; 2024 Pietro Chioda. All rights reserved.
